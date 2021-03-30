@@ -92,6 +92,9 @@ def optional_fields(model):
     for item in mandatory_keys_specs:
         model['specs'][item] = 'string'
 
+    # optional pictures
+    model['pictures'] = ['optional picture 1', 'optional picture 2']
+    
     return model
 
 def create_model():

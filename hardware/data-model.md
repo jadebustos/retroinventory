@@ -44,6 +44,9 @@ comments:
 manuals:
 - optional (manual title)
 - optional (manual title)
+pictures:
+- optional picture 1
+- optional picture 2
 specs:
   cpubits: string
   cpumodel: string
@@ -56,6 +59,7 @@ specs:
 + **children** list pointing out other id items related to this item.
 + **comments** list to add comments about the item.
 + **manuals** list to add manuals for the item.
++ **pictures** list to add pictures path for the device.
 + **specs** list to store specs.
   + **cpubits** to point out if it is 8, 16, .. bits.
   + **cpumodel** cpu model.
