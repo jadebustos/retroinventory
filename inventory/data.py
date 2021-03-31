@@ -1,0 +1,21 @@
+# common data
+data = {}
+data['comments'] = ['comment 1', 'comment 2']
+data['description'] = {}
+data['description']['boxed'] = False
+data['description']['family'] = ''
+data['description']['subfamily'] = ''
+data['description']['manufacturer'] = ''
+data['description']['mint'] = False
+data['description']['model'] = ''
+data['description']['sealed'] = False
+data['description']['serial'] = ''
+data['description']['working'] = True
+data['id'] = ''
+data['type'] = ''
+data['specs'] = {}
+data['specs']['cpubits'] = '8'
+data['specs']['cpuvendor'] = 'Zilog'
+data['specs']['cpumodel'] = 'Z80A'
+data['specs']['cpuspeed'] = '3.58 MHz'
+data['specs']['memory'] = '64 KB'
