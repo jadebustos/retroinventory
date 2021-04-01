@@ -4,6 +4,10 @@ from data import data
 
 msx = copy.deepcopy(data)
 
+# default data is loaded
+
+# MSX data
+
 # MSX
 msx['specs']['cpubits'] = '8'
 msx['specs']['cpuvendor'] = 'Zilog'

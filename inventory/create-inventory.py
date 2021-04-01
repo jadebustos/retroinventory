@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-
 """ inventoy - script to create an inventory
                this script creates an empty inventory file
 
@@ -31,7 +30,7 @@ import sys
 import io
 import os
 
-from family import families
+from modules.family import families
 
 def menu(subfamilies):
     option = -1
