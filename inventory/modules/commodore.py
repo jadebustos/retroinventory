@@ -1,6 +1,6 @@
 import copy
 
-from data import data
+from data import *
 
 commodore = copy.deepcopy(data)
 
@@ -10,7 +10,7 @@ commodore = copy.deepcopy(data)
 commodore['description']['manufacturer'] = 'Commodore'
 
 # VIC-20
-commodore['specs']['cpubits'] = '8'
+commodore['specs'] = hw_data.copy()
 commodore['specs']['cpuvendor'] = 'MOS Technology'
 commodore['specs']['cpumodel'] = '6502'
 commodore['specs']['cpuspeed'] = '1.1 MHz'
@@ -20,7 +20,7 @@ commodore['description']['model'] = 'VIC-20'
 vic20_data = copy.deepcopy(commodore)
 
 # Commodore 16
-commodore['specs']['cpubits'] = '8'
+commodore['specs'] = hw_data.copy()
 commodore['specs']['cpuvendor'] = 'MOS Technology'
 commodore['specs']['cpumodel'] = '8501'
 commodore['specs']['cpuspeed'] = '1.76 MHz'
@@ -30,7 +30,7 @@ commodore['description']['model'] = 'Commodore 16'
 c16_data = copy.deepcopy(commodore)
 
 # Commodore 64
-commodore['specs']['cpubits'] = '8'
+commodore['specs'] = hw_data.copy()
 commodore['specs']['cpuvendor'] = 'MOS Technology'
 commodore['specs']['cpumodel'] = '6510/8500'
 commodore['specs']['cpuspeed'] = '0.985 MHz'
@@ -39,7 +39,7 @@ commodore['specs']['rom'] = '20 KB'
 c64_data = copy.deepcopy(commodore)
 
 # Commodore 128
-commodore['specs']['cpubits'] = '8'
+commodore['specs'] = hw_data.copy()
 commodore['specs']['cpuvendor'] = 'MOS Technology'
 commodore['specs']['cpumodel'] = '8502'
 commodore['specs']['cpuspeed'] = '2 MHz'
@@ -49,6 +49,7 @@ commodore['specs']['rom'] = '72 KB'
 c128_data = copy.deepcopy(commodore)
 
 # Amiga
+commodore['specs'] = hw_data.copy()
 commodore['specs']['cpubits'] = '16'
 commodore['specs']['cpuvendor'] = 'Motorola'
 commodore['specs']['cpumodel'] = '68000'
