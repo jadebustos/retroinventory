@@ -32,6 +32,8 @@ import os
 
 from modules.family import families
 
+import json
+
 def menu(subfamilies):
     option = -1
     while( option < 0 or option > len(subfamilies)):
@@ -77,7 +79,7 @@ def main():
     item['type'] = args.type
     item['description']['family'] = args.family
     item['description']['subfamily'] = option
-
+    print(json.dumps(item, indent=2))
     # Write YAML file
     filename = os.path.join(args.directory, args.name)
     with io.open(filename, 'w', encoding='utf8') as outfile:
