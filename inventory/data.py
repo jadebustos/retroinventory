@@ -1,6 +1,5 @@
 # common data
 data = {}
-data['comments'] = ['comment 1', 'comment 2']
 data['description'] = {}
 data['description']['boxed'] = False
 data['description']['family'] = ''
@@ -14,8 +13,13 @@ data['description']['working'] = True
 data['id'] = ''
 data['type'] = ''
 data['specs'] = {}
-data['specs']['cpubits'] = '8'
-data['specs']['cpuvendor'] = 'Zilog'
-data['specs']['cpumodel'] = 'Z80A'
-data['specs']['cpuspeed'] = '3.58 MHz'
-data['specs']['ram'] = '64 KB'
+data['pictures'] = ['picture1.png', 'picture2.png']
+data['comments'] = ['comment 1', 'comment 2']
+
+# hardware specs
+hw_data = {}
+hw_data['cpubits'] = '8'
+hw_data['cpuvendor'] = 'Zilog'
+hw_data['cpumodel'] = 'Z80A'
+hw_data['cpuspeed'] = '3.58 MHz'
+hw_data['ram'] = '64 KB'

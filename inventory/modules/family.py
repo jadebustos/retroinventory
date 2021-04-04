@@ -3,6 +3,7 @@ import modules.atari
 import modules.commodore
 import modules.msx
 import modules.sinclair
+import modules.vtech
 
 # Families
 families = {}
@@ -44,3 +45,7 @@ families['Amstrad']['CPC6128'] = modules.amstrad.cpc6128_data.copy()
 families['Atari'] = {}
 families['Atari']['Atari-800'] = modules.atari.atari_800_data.copy()
 families['Atari']['Atari-1040'] = modules.atari.atari_1040_data.copy()
+
+# Vtech
+families['VTech'] = {}
+families['VTech']['Laser-200'] = modules.vtech.laser200_data.copy()
